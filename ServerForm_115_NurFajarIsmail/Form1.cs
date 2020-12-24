@@ -18,6 +18,9 @@ namespace ServerForm_115_NurFajarIsmail
         public Form1()
         {
             InitializeComponent();
+            label1.Text = "Server OFF";
+            label2.Text = "Klik ON untuk menyalakan Server";
+            btOff.Enabled = false;
             
             
             
@@ -45,6 +48,8 @@ namespace ServerForm_115_NurFajarIsmail
                 hostObjek = new ServiceHost(typeof(Service1));
                 hostObjek.Open();
                 label1.Text = "Server ON";
+                label2.Text = "Klik OFF untuk mematikan Server";
+                btOff.Enabled = true;
 
             }
             catch (Exception ex)
@@ -62,6 +67,9 @@ namespace ServerForm_115_NurFajarIsmail
                 hostObjek = new ServiceHost(typeof(Service1));
                 hostObjek.Close();
                 label1.Text = "Server OFF";
+                btON.Enabled = false;
+                label3.Text = "Server hanya bisa dinyalakan sekali";
+                label4.Text = "Silahkan Cloase Server dan Run lagi";
 
             }
             catch (Exception ex)
