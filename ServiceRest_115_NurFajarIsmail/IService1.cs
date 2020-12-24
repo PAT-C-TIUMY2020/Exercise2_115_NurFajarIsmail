@@ -15,13 +15,16 @@ namespace ServiceRest_115_NurFajarIsmail
 		[OperationContract]
 		[WebGet(UriTemplate = "Mahasiswa",  ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
 		List<Mahasiswa> GetAllMahasiswa();
+		
+
 		[OperationContract]
-       
-		[WebInvoke(Method = "PUT",UriTemplate = "Mahasiswaedit", BodyStyle = WebMessageBodyStyle.Wrapped, RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
-		string EditMahasiswa(string nim, string nama, string prodi, string angkatan);
+		[WebInvoke(Method = "PUT", UriTemplate = "UpdateMahasiswa", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+		string UpdateMahasiswa(Mahasiswa mhs);
+
 		[OperationContract]
-        [WebInvoke(Method = "DELETE", UriTemplate = "deleteMahasiswa", BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json)]
+        [WebInvoke(Method = "DELETE", UriTemplate = "DeleteMahasiswa/{nim}", BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json)]
 		string DeleteMahasiswa(string nim);
+
 		[OperationContract]
 		[WebInvoke( UriTemplate = "jumlahMahasiswa", ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.Wrapped)]
 		string CountMahasiswa();

@@ -39,31 +39,9 @@ namespace ServiceRest_115_NurFajarIsmail
             return msg;
         }
 
-        public string EditMahasiswa(string nim, string nama, string prodi, string angkatan)
-        {
-            string msg = "GAGAL";
-            SqlConnection sqlcon = new SqlConnection("Data Source = DESKTOP-47CL7NM; Initial Catalog =\"TI UMY\"; Persist Security Info = True; User ID =sa; Password =Fismljr10");
-            string query = String.Format("update Mahasiswa set nama = '{1}',prodi='{2}', angkatan='{3}' where nim='{0}'", nim, nama, prodi, angkatan);
-            SqlCommand sqlcom = new SqlCommand(query, sqlcon);
-            try
-            {
-                sqlcon.Open();
-                Console.WriteLine(query);
-                sqlcom.ExecuteNonQuery();
-                sqlcon.Close();
-                msg = "Sukses";
+        
 
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                Console.WriteLine(query);
-                msg = "GAGAL";
-            }
-
-
-            return msg;
-        }
+       
 
         public List<Mahasiswa> GetAllMahasiswa()
         {
@@ -98,11 +76,31 @@ namespace ServiceRest_115_NurFajarIsmail
             return mahas;
         }
 
-      
+        public string UpdateMahasiswa(Mahasiswa mhs)
+        {
+            string msg = "GAGAL";
+            SqlConnection sqlcon = new SqlConnection("Data Source = DESKTOP-47CL7NM; Initial Catalog =\"TI UMY\"; Persist Security Info = True; User ID =sa; Password =Fismljr10");
+            string query = String.Format("update Mahasiswa set Nama = '{0}', Prodi = '{1}', Angkatan = '{2}' where NIM = '{3}'", mhs.nama, mhs.prodi, mhs.angkatan, mhs.nim);
+            SqlCommand sqlcom = new SqlCommand(query, sqlcon);
+            try
+            {
+                sqlcon.Open();
+                Console.WriteLine(query);
+                sqlcom.ExecuteNonQuery();
+                sqlcon.Close();
+                msg = "Sukses";
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine(query);
+                msg = "GAGAL";
+            }
 
 
-
-
+            return msg;
+        }
 
         string IService1.DeleteMahasiswa(string nim)
         {

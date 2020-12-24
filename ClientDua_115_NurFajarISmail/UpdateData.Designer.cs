@@ -36,7 +36,7 @@ namespace ClientDua_115_NurFajarISmail
             this.textBoxNIM = new System.Windows.Forms.TextBox();
             this.textBoxNama = new System.Windows.Forms.TextBox();
             this.textBoxProdi = new System.Windows.Forms.TextBox();
-            this.textBoxJurusan = new System.Windows.Forms.TextBox();
+            this.textBoxAngkatan = new System.Windows.Forms.TextBox();
             this.btKembali = new System.Windows.Forms.Button();
             this.btUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -73,9 +73,9 @@ namespace ClientDua_115_NurFajarISmail
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(66, 189);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Jurusan";
+            this.label4.Text = "Angkatan";
             // 
             // textBoxNIM
             // 
@@ -98,12 +98,12 @@ namespace ClientDua_115_NurFajarISmail
             this.textBoxProdi.Size = new System.Drawing.Size(158, 20);
             this.textBoxProdi.TabIndex = 6;
             // 
-            // textBoxJurusan
+            // textBoxAngkatan
             // 
-            this.textBoxJurusan.Location = new System.Drawing.Point(128, 186);
-            this.textBoxJurusan.Name = "textBoxJurusan";
-            this.textBoxJurusan.Size = new System.Drawing.Size(158, 20);
-            this.textBoxJurusan.TabIndex = 7;
+            this.textBoxAngkatan.Location = new System.Drawing.Point(128, 186);
+            this.textBoxAngkatan.Name = "textBoxAngkatan";
+            this.textBoxAngkatan.Size = new System.Drawing.Size(158, 20);
+            this.textBoxAngkatan.TabIndex = 7;
             // 
             // btKembali
             // 
@@ -132,7 +132,7 @@ namespace ClientDua_115_NurFajarISmail
             this.ClientSize = new System.Drawing.Size(370, 450);
             this.Controls.Add(this.btUpdate);
             this.Controls.Add(this.btKembali);
-            this.Controls.Add(this.textBoxJurusan);
+            this.Controls.Add(this.textBoxAngkatan);
             this.Controls.Add(this.textBoxProdi);
             this.Controls.Add(this.textBoxNama);
             this.Controls.Add(this.textBoxNIM);
@@ -157,7 +157,7 @@ namespace ClientDua_115_NurFajarISmail
         private System.Windows.Forms.TextBox textBoxNIM;
         private System.Windows.Forms.TextBox textBoxNama;
         private System.Windows.Forms.TextBox textBoxProdi;
-        private System.Windows.Forms.TextBox textBoxJurusan;
+        private System.Windows.Forms.TextBox textBoxAngkatan;
         private System.Windows.Forms.Button btKembali;
         private System.Windows.Forms.Button btUpdate;
     }

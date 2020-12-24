@@ -77,34 +77,25 @@ namespace ClientDua_115_NurFajarISmail
 		string baseurl = "http://localhost:1926";
 		private void btDelete_Click(object sender, EventArgs e)
         {
-			
-			
-			var json = new WebClient().DownloadString("http://localhost:1926/Mahasiswa");
-			var data = JsonConvert.DeserializeObject<List<Mahasiswa>>(json);
+
 
 			if (MessageBox.Show("Are you sure you want to delete", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
 			{
-                try
-                {
-					WebClient postdata = new WebClient();
-					postdata.Headers.Add(HttpRequestHeader.ContentType, "application/json");
-					MemoryStream ms = new MemoryStream();
-					string output = JsonConvert.SerializeObject(textBoxNIM.Text);
-					DataContractSerializer ser = new DataContractSerializer(typeof(string));
-					ser.WriteObject(ms, textBoxNIM.Text);
-					string response = postdata.UploadString(baseurl + "deleteMahasiswa", output);
-					TampilData();
+				try
+				{
+					ClassMahasiswa classData = new ClassMahasiswa();
+					classData.deleteMahasiswa(textBoxNIM.Text);
+
+					
+					MessageBox.Show("Data successfuly deleted");
+					Homepage home = new Homepage();
+					this.Hide();
+					home.Show();
 				}
 				catch (Exception ex)
 				{
-
+					
 				}
-
-
-				
-
-
-
 			}
 
 
