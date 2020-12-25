@@ -15,7 +15,15 @@ namespace ServiceRest_115_NurFajarIsmail
 		[OperationContract]
 		[WebGet(UriTemplate = "Mahasiswa",  ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
 		List<Mahasiswa> GetAllMahasiswa();
-		
+
+		[OperationContract]
+		[WebGet(UriTemplate = "Mahasiswa/nim={nim}", ResponseFormat = WebMessageFormat.Json)]
+		Mahasiswa GetMahasiswaByNIM(string nim);
+
+		[OperationContract]
+		[WebInvoke(Method = "POST", UriTemplate = "Mahasiswa", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
+		string CreateMahasiswa(Mahasiswa mhs);
+
 
 		[OperationContract]
 		[WebInvoke(Method = "PUT", UriTemplate = "UpdateMahasiswa", RequestFormat = WebMessageFormat.Json, ResponseFormat = WebMessageFormat.Json)]
