@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using RestSharp;
 using System;
 
 using System.Collections.Generic;
@@ -51,7 +52,30 @@ namespace ClientDua_115_NurFajarISmail
 				set { _angkatan = value; }
 			}
 		}
-		
+
+		class ClassMahasiswa
+		{
+			string baseUrl = "http://localhost:1926/";
+
+			
+
+			public bool deleteMahasiswa(string nim)
+			{
+				bool deleted = false;
+				try
+				{
+					var client = new RestClient(baseUrl);
+					var request = new RestRequest("DeleteMahasiswa/" + nim, Method.DELETE);
+					client.Execute(request);
+				}
+				catch (Exception ex)
+				{
+
+				}
+				return deleted;
+			}
+		}
+
 
 		public void TampilData()
         {
@@ -74,7 +98,7 @@ namespace ClientDua_115_NurFajarISmail
         {
 
         }
-		string baseurl = "http://localhost:1926";
+		
 		private void btDelete_Click(object sender, EventArgs e)
         {
 

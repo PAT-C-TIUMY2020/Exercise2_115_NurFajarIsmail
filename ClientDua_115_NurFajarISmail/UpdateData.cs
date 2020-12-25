@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RestSharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ClientDua_115_NurFajarISmail.Homepage;
 
 namespace ClientDua_115_NurFajarISmail
 {
@@ -18,6 +20,25 @@ namespace ClientDua_115_NurFajarISmail
             textBoxNIM.Text = Homepage.sendtext;
             textBoxNIM.Enabled = false;
 
+        }
+
+        string baseUrl = "http://localhost:1926/";
+
+        public bool updateDatabase(Mahasiswa mhs)
+        {
+            bool updated = false;
+            try
+            {
+                var client = new RestClient(baseUrl);
+                var request = new RestRequest("UpdateMahasiswa", Method.PUT);
+                request.AddJsonBody(mhs);
+                client.Execute(request);
+            }
+            catch (Exception ex)
+            {
+
+            }
+            return updated;
         }
 
         private void UpdateData_Load(object sender, EventArgs e)
@@ -53,8 +74,8 @@ namespace ClientDua_115_NurFajarISmail
                         mhs.prodi = textBoxProdi.Text;
                         mhs.angkatan = textBoxAngkatan.Text;
 
-                        ClassMahasiswa classData = new ClassMahasiswa();
-                        classData.updateDatabase(mhs);
+                       
+                        updateDatabase(mhs);
                         MessageBox.Show("Data successfuly updated");
                       
                         
