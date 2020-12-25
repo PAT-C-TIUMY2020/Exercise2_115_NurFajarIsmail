@@ -43,7 +43,7 @@ namespace ClientSatu_115_NurFajarIsmail
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(108, 44);
+            this.label1.Location = new System.Drawing.Point(28, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@ namespace ClientSatu_115_NurFajarIsmail
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(108, 86);
+            this.label2.Location = new System.Drawing.Point(28, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 1;
@@ -61,7 +61,7 @@ namespace ClientSatu_115_NurFajarIsmail
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(108, 127);
+            this.label3.Location = new System.Drawing.Point(28, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
             this.label3.TabIndex = 2;
@@ -70,7 +70,7 @@ namespace ClientSatu_115_NurFajarIsmail
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(108, 169);
+            this.label4.Location = new System.Drawing.Point(28, 149);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 3;
@@ -78,14 +78,14 @@ namespace ClientSatu_115_NurFajarIsmail
             // 
             // textBoxNama
             // 
-            this.textBoxNama.Location = new System.Drawing.Point(194, 41);
+            this.textBoxNama.Location = new System.Drawing.Point(114, 21);
             this.textBoxNama.Name = "textBoxNama";
             this.textBoxNama.Size = new System.Drawing.Size(190, 20);
             this.textBoxNama.TabIndex = 4;
             // 
             // textBoxNIM
             // 
-            this.textBoxNIM.Location = new System.Drawing.Point(194, 83);
+            this.textBoxNIM.Location = new System.Drawing.Point(114, 63);
             this.textBoxNIM.Name = "textBoxNIM";
             this.textBoxNIM.Size = new System.Drawing.Size(190, 20);
             this.textBoxNIM.TabIndex = 5;
@@ -102,14 +102,14 @@ namespace ClientSatu_115_NurFajarIsmail
             "2018",
             "2019",
             "2020"});
-            this.comboBoxAngkatan.Location = new System.Drawing.Point(194, 166);
+            this.comboBoxAngkatan.Location = new System.Drawing.Point(114, 146);
             this.comboBoxAngkatan.Name = "comboBoxAngkatan";
             this.comboBoxAngkatan.Size = new System.Drawing.Size(190, 21);
             this.comboBoxAngkatan.TabIndex = 7;
             // 
             // btSimpan
             // 
-            this.btSimpan.Location = new System.Drawing.Point(194, 222);
+            this.btSimpan.Location = new System.Drawing.Point(114, 202);
             this.btSimpan.Name = "btSimpan";
             this.btSimpan.Size = new System.Drawing.Size(75, 23);
             this.btSimpan.TabIndex = 8;
@@ -119,7 +119,7 @@ namespace ClientSatu_115_NurFajarIsmail
             // 
             // textBoxProdi
             // 
-            this.textBoxProdi.Location = new System.Drawing.Point(194, 124);
+            this.textBoxProdi.Location = new System.Drawing.Point(114, 104);
             this.textBoxProdi.Name = "textBoxProdi";
             this.textBoxProdi.Size = new System.Drawing.Size(190, 20);
             this.textBoxProdi.TabIndex = 9;
@@ -128,7 +128,7 @@ namespace ClientSatu_115_NurFajarIsmail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(514, 334);
+            this.ClientSize = new System.Drawing.Size(351, 334);
             this.Controls.Add(this.textBoxProdi);
             this.Controls.Add(this.btSimpan);
             this.Controls.Add(this.comboBoxAngkatan);

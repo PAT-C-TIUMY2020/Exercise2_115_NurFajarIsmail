@@ -68,5 +68,10 @@ namespace ClientSatu_115_NurFajarIsmail
         {
 
         }
+
+        private void btSinkkronisasi_Click(object sender, EventArgs e)
+        {
+            TampilData();
+        }
     }
 }

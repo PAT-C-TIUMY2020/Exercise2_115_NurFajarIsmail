@@ -63,6 +63,12 @@
     <Compile Include="TambahData.Designer.cs">
       <DependentUpon>TambahData.cs</DependentUpon>
     </Compile>
+    <Compile Include="TampilanDepan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TampilanDepan.Designer.cs">
+      <DependentUpon>TampilanDepan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +83,9 @@
     </Compile>
     <EmbeddedResource Include="TambahData.resx">
       <DependentUpon>TambahData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TampilanDepan.resx">
+      <DependentUpon>TampilanDepan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

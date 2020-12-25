@@ -36,6 +36,7 @@ namespace ClientDua_115_NurFajarISmail
             this.btUpdate = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.labelJumlah = new System.Windows.Forms.Label();
+            this.btSinkronisasi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +52,7 @@ namespace ClientDua_115_NurFajarISmail
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 158);
+            this.dataGridView1.Location = new System.Drawing.Point(54, 157);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(529, 207);
             this.dataGridView1.TabIndex = 1;
@@ -101,11 +102,22 @@ namespace ClientDua_115_NurFajarISmail
             this.labelJumlah.Size = new System.Drawing.Size(0, 13);
             this.labelJumlah.TabIndex = 6;
             // 
+            // btSinkronisasi
+            // 
+            this.btSinkronisasi.Location = new System.Drawing.Point(508, 128);
+            this.btSinkronisasi.Name = "btSinkronisasi";
+            this.btSinkronisasi.Size = new System.Drawing.Size(75, 23);
+            this.btSinkronisasi.TabIndex = 7;
+            this.btSinkronisasi.Text = "Sinkronisasi";
+            this.btSinkronisasi.UseVisualStyleBackColor = true;
+            this.btSinkronisasi.Click += new System.EventHandler(this.btSinkronisasi_Click);
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(647, 450);
+            this.Controls.Add(this.btSinkronisasi);
             this.Controls.Add(this.labelJumlah);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btUpdate);
@@ -131,6 +143,7 @@ namespace ClientDua_115_NurFajarISmail
         private System.Windows.Forms.Button btUpdate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label labelJumlah;
+        private System.Windows.Forms.Button btSinkronisasi;
     }
 }
 

@@ -13,3 +13,4 @@ F:\Kuliah\SEMESTER 5\Pengembangan Aplikasi Terdistribusi\excercise2\Exercise2_11
 F:\Kuliah\SEMESTER 5\Pengembangan Aplikasi Terdistribusi\excercise2\Exercise2_115\ClientDua_115_NurFajarISmail\obj\Debug\ClientDua_115_NurFajarISmail.pdb
 F:\Kuliah\SEMESTER 5\Pengembangan Aplikasi Terdistribusi\excercise2\Exercise2_115\ClientDua_115_NurFajarISmail\bin\Debug\RestSharp.dll
 F:\Kuliah\SEMESTER 5\Pengembangan Aplikasi Terdistribusi\excercise2\Exercise2_115\ClientDua_115_NurFajarISmail\bin\Debug\RestSharp.xml
+F:\Kuliah\SEMESTER 5\Pengembangan Aplikasi Terdistribusi\excercise2\Exercise2_115\ClientDua_115_NurFajarISmail\obj\Debug\ClientDua_115_NurFajarIsmail.csprojAssemblyReference.cache

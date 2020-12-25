@@ -22,7 +22,7 @@ namespace ClientDua_115_NurFajarISmail
 
         }
 
-        string baseUrl = "http://localhost:1926/";
+        string baseUrl = "http://localhost:1907/";
 
         public bool updateDatabase(Mahasiswa mhs)
         {

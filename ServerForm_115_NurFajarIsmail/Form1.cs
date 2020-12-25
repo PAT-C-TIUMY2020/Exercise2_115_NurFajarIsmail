@@ -50,6 +50,7 @@ namespace ServerForm_115_NurFajarIsmail
                 label1.Text = "Server ON";
                 label2.Text = "Klik OFF untuk mematikan Server";
                 btOff.Enabled = true;
+                btON.Enabled = false;
 
             }
             catch (Exception ex)

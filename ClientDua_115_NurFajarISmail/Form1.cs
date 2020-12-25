@@ -55,7 +55,7 @@ namespace ClientDua_115_NurFajarISmail
 
 		class ClassMahasiswa
 		{
-			string baseUrl = "http://localhost:1926/";
+			string baseUrl = "http://localhost:1907/";
 
 			
 
@@ -79,7 +79,7 @@ namespace ClientDua_115_NurFajarISmail
 
 		public void TampilData()
         {
-            var json = new WebClient().DownloadString("http://localhost:1926/Mahasiswa");
+            var json = new WebClient().DownloadString("http://localhost:1907/Mahasiswa");
             var data = JsonConvert.DeserializeObject<List<Mahasiswa>>(json);
 
 			dataGridView1.DataSource = data;
@@ -87,7 +87,7 @@ namespace ClientDua_115_NurFajarISmail
         }
 		public void JumlahData()
         {
-			var json = new WebClient().DownloadString("http://localhost:1926/Mahasiswa");
+			var json = new WebClient().DownloadString("http://localhost:1907/Mahasiswa");
 			var data = JsonConvert.DeserializeObject<List<Mahasiswa>>(json);
 			int length = data.Count();
 			labelJumlah.Text = length.ToString();
@@ -144,6 +144,11 @@ namespace ClientDua_115_NurFajarISmail
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btSinkronisasi_Click(object sender, EventArgs e)
+        {
+			TampilData();
         }
     }
 }

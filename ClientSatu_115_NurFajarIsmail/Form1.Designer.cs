@@ -34,12 +34,13 @@ namespace ClientSatu_115_NurFajarIsmail
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxNIM = new System.Windows.Forms.TextBox();
             this.btCari = new System.Windows.Forms.Button();
+            this.btSinkkronisasi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btTambahData
             // 
-            this.btTambahData.Location = new System.Drawing.Point(53, 300);
+            this.btTambahData.Location = new System.Drawing.Point(401, 64);
             this.btTambahData.Name = "btTambahData";
             this.btTambahData.Size = new System.Drawing.Size(134, 23);
             this.btTambahData.TabIndex = 0;
@@ -50,16 +51,16 @@ namespace ClientSatu_115_NurFajarIsmail
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 67);
+            this.dataGridView1.Location = new System.Drawing.Point(30, 109);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(568, 216);
+            this.dataGridView1.Size = new System.Drawing.Size(505, 216);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(50, 27);
+            this.label1.Location = new System.Drawing.Point(27, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(130, 13);
             this.label1.TabIndex = 2;
@@ -68,26 +69,37 @@ namespace ClientSatu_115_NurFajarIsmail
             // 
             // textBoxNIM
             // 
-            this.textBoxNIM.Location = new System.Drawing.Point(207, 24);
+            this.textBoxNIM.Location = new System.Drawing.Point(184, 24);
             this.textBoxNIM.Name = "textBoxNIM";
-            this.textBoxNIM.Size = new System.Drawing.Size(230, 20);
+            this.textBoxNIM.Size = new System.Drawing.Size(192, 20);
             this.textBoxNIM.TabIndex = 3;
             // 
             // btCari
             // 
-            this.btCari.Location = new System.Drawing.Point(475, 22);
+            this.btCari.Location = new System.Drawing.Point(401, 24);
             this.btCari.Name = "btCari";
-            this.btCari.Size = new System.Drawing.Size(139, 23);
+            this.btCari.Size = new System.Drawing.Size(134, 23);
             this.btCari.TabIndex = 4;
             this.btCari.Text = "Cari";
             this.btCari.UseVisualStyleBackColor = true;
             this.btCari.Click += new System.EventHandler(this.btCari_Click);
             // 
+            // btSinkkronisasi
+            // 
+            this.btSinkkronisasi.Location = new System.Drawing.Point(30, 64);
+            this.btSinkkronisasi.Name = "btSinkkronisasi";
+            this.btSinkkronisasi.Size = new System.Drawing.Size(142, 23);
+            this.btSinkkronisasi.TabIndex = 5;
+            this.btSinkkronisasi.Text = "Sinkkronisasi";
+            this.btSinkkronisasi.UseVisualStyleBackColor = true;
+            this.btSinkkronisasi.Click += new System.EventHandler(this.btSinkkronisasi_Click);
+            // 
             // Homepage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 450);
+            this.ClientSize = new System.Drawing.Size(618, 450);
+            this.Controls.Add(this.btSinkkronisasi);
             this.Controls.Add(this.btCari);
             this.Controls.Add(this.textBoxNIM);
             this.Controls.Add(this.label1);
@@ -109,6 +121,7 @@ namespace ClientSatu_115_NurFajarIsmail
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxNIM;
         private System.Windows.Forms.Button btCari;
+        private System.Windows.Forms.Button btSinkkronisasi;
     }
 }
 

@@ -11,3 +11,4 @@ F:\Kuliah\SEMESTER 5\Pengembangan Aplikasi Terdistribusi\excercise2\Exercise2_11
 F:\Kuliah\SEMESTER 5\Pengembangan Aplikasi Terdistribusi\excercise2\Exercise2_115\ClientSatu_115_NurFajarIsmail\obj\Debug\ClientSatu_115_NurFajarIsmail.exe
 F:\Kuliah\SEMESTER 5\Pengembangan Aplikasi Terdistribusi\excercise2\Exercise2_115\ClientSatu_115_NurFajarIsmail\obj\Debug\ClientSatu_115_NurFajarIsmail.pdb
 F:\Kuliah\SEMESTER 5\Pengembangan Aplikasi Terdistribusi\excercise2\Exercise2_115\ClientSatu_115_NurFajarIsmail\obj\Debug\ClientSatu_115_NurFajarIsmail.csprojAssemblyReference.cache
+F:\Kuliah\SEMESTER 5\Pengembangan Aplikasi Terdistribusi\excercise2\Exercise2_115\ClientSatu_115_NurFajarIsmail\obj\Debug\ClientSatu_115_NurFajarIsmail.TampilanDepan.resources
