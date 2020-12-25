@@ -81,14 +81,14 @@ namespace ClientDua_115_NurFajarISmail
             this.btUpdate.Name = "btUpdate";
             this.btUpdate.Size = new System.Drawing.Size(75, 23);
             this.btUpdate.TabIndex = 4;
-            this.btUpdate.Text = "Update";
+            this.btUpdate.Text = "Ubah Data";
             this.btUpdate.UseVisualStyleBackColor = true;
             this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(219, 126);
+            this.label2.Location = new System.Drawing.Point(219, 113);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 13);
             this.label2.TabIndex = 5;
@@ -97,14 +97,14 @@ namespace ClientDua_115_NurFajarISmail
             // labelJumlah
             // 
             this.labelJumlah.AutoSize = true;
-            this.labelJumlah.Location = new System.Drawing.Point(321, 126);
+            this.labelJumlah.Location = new System.Drawing.Point(331, 113);
             this.labelJumlah.Name = "labelJumlah";
             this.labelJumlah.Size = new System.Drawing.Size(0, 13);
             this.labelJumlah.TabIndex = 6;
             // 
             // btSinkronisasi
             // 
-            this.btSinkronisasi.Location = new System.Drawing.Point(508, 128);
+            this.btSinkronisasi.Location = new System.Drawing.Point(269, 129);
             this.btSinkronisasi.Name = "btSinkronisasi";
             this.btSinkronisasi.Size = new System.Drawing.Size(75, 23);
             this.btSinkronisasi.TabIndex = 7;
@@ -126,7 +126,7 @@ namespace ClientDua_115_NurFajarISmail
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "Homepage";
-            this.Text = "Homepage";
+            this.Text = "Homepage3B";
             this.Load += new System.EventHandler(this.Homepage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

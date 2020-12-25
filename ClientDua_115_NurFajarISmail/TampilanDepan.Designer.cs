@@ -60,7 +60,8 @@ namespace ClientDua_115_NurFajarISmail
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "TampilanDepan";
-            this.Text = "TampilanDepan";
+            this.Text = "TampilanDepan3B";
+            this.Load += new System.EventHandler(this.TampilanDepan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

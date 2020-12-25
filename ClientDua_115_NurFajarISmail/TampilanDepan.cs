@@ -30,5 +30,10 @@ namespace ClientDua_115_NurFajarISmail
             this.Hide();
             home.Show();
         }
+
+        private void TampilanDepan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -76,7 +76,7 @@ namespace ClientDua_115_NurFajarISmail
 
                        
                         updateDatabase(mhs);
-                        MessageBox.Show("Data successfuly updated");
+                        MessageBox.Show("Data berhasil Diupdate");
                       
                         
                     }
@@ -87,12 +87,12 @@ namespace ClientDua_115_NurFajarISmail
                 }
                 else
                 {
-                    MessageBox.Show("Please check your data");
+                    MessageBox.Show("Silahkan cek data anda");
                 }
             }
             else
             {
-                MessageBox.Show("Please check your data");
+                MessageBox.Show("Silahkan cek data anda");
             }
             Homepage home = new Homepage();
             this.Hide();

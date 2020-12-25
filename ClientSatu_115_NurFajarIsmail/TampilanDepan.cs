@@ -23,5 +23,10 @@ namespace ClientSatu_115_NurFajarIsmail
             this.Hide();
             home.Show();
         }
+
+        private void TampilanDepan_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

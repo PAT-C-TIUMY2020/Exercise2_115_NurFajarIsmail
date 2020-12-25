@@ -106,7 +106,7 @@ namespace ClientSatu_115_NurFajarIsmail
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btTambahData);
             this.Name = "Homepage";
-            this.Text = "Homepage";
+            this.Text = "Homepage3A";
             this.Load += new System.EventHandler(this.Homepage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

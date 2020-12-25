@@ -103,7 +103,7 @@ namespace ClientDua_115_NurFajarISmail
         {
 
 
-			if (MessageBox.Show("Are you sure you want to delete", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+			if (MessageBox.Show("Apakah anda yakin ingin menghapus?", "Hapus", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
 			{
 				try
 				{
@@ -111,7 +111,7 @@ namespace ClientDua_115_NurFajarISmail
 					classData.deleteMahasiswa(textBoxNIM.Text);
 
 					
-					MessageBox.Show("Data successfuly deleted");
+					MessageBox.Show("Data sberhasil dihapus");
 					Homepage home = new Homepage();
 					this.Hide();
 					home.Show();
