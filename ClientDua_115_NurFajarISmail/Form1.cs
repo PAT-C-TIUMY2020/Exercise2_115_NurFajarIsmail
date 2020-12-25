@@ -151,7 +151,9 @@ namespace ClientDua_115_NurFajarISmail
         private void btSinkronisasi_Click(object sender, EventArgs e)
         {
 			TampilData();
-			
+			JumlahData();
+
+
 		}
     }
 }
