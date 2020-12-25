@@ -94,6 +94,7 @@ namespace ClientDua_115_NurFajarISmail
             {
                 MessageBox.Show("Silahkan cek data anda");
             }
+            MessageBox.Show("Silahkan Sinkronisasi di Homepage3AClietSatu");
             Homepage home = new Homepage();
             this.Hide();
             home.Show();

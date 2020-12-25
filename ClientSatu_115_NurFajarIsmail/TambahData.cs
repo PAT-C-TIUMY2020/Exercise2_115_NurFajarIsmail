@@ -65,6 +65,7 @@ namespace ClientSatu_115_NurFajarIsmail
 			string response = postdata.UploadString(baseUrl + "Mahasiswa", data);
 
 			MessageBox.Show(response);
+			MessageBox.Show("Silahkan Sinkronisasi di Homepage3B pada ClietDua");
 
 			Homepage hm = new Homepage();
 			this.Hide();

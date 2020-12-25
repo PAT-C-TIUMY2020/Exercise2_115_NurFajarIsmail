@@ -112,6 +112,8 @@ namespace ClientDua_115_NurFajarISmail
 
 					
 					MessageBox.Show("Data sberhasil dihapus");
+
+					MessageBox.Show("Silahkan Sinkronisasi di Homepage3AClietSatu");
 					Homepage home = new Homepage();
 					this.Hide();
 					home.Show();
@@ -149,6 +151,7 @@ namespace ClientDua_115_NurFajarISmail
         private void btSinkronisasi_Click(object sender, EventArgs e)
         {
 			TampilData();
-        }
+			
+		}
     }
 }

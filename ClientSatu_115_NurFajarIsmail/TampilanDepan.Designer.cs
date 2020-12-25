@@ -60,7 +60,7 @@ namespace ClientSatu_115_NurFajarIsmail
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "TampilanDepan";
-            this.Text = "TampilanDepan3AS";
+            this.Text = "TampilanDepan3A";
             this.Load += new System.EventHandler(this.TampilanDepan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
